@@ -12,17 +12,14 @@ const Homepage = () => {
   }
 
   const handleDelete = async(id) => {
-    console.log(id)
+    
     let res = await fetch(`https://crud-8t5x.onrender.com/student/${id}`, {method: 'DELETE'})
     let student = await res.json()
     setStudent(student.student)
   }
-
-console.log(student)
-
   useEffect(() => {
     getStudentData()
-  }, [])
+  }, [student])
 
   return (
     <div className="container">

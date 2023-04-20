@@ -28,7 +28,6 @@ const Update = () => {
     }, [])
 
     const handleUpdate = async(e) => {
-        console.log(e.target.value)
         e.preventDefault()
         if(!email || !fatherName || !contact_number || !age || !name) {
             alert("Please fill all required fields")

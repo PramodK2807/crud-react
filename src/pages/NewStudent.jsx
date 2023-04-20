@@ -15,7 +15,7 @@ const NewStudent = () => {
     const handleSubmit = async(e) => {
 
         e.preventDefault()
-        // console.log(name, email, contact_number)
+       
         if(!email || !fatherName || !contact_number || !age || !name) {
             alert("Please fill all required fields")
             return false
