@@ -13,7 +13,7 @@ const Homepage = () => {
 
   const handleDelete = async(id) => {
     console.log(id)
-    let res = await fetch(`http://localhost:3100/student/${id}`, {method: 'DELETE'})
+    let res = await fetch(`https://crud-8t5x.onrender.com/student/${id}`, {method: 'DELETE'})
     let student = await res.json()
     setStudent(student.student)
   }

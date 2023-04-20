@@ -33,7 +33,7 @@ const NewStudent = () => {
         }
       
           try {
-            let response = await fetch(`http://localhost:3100/student`, {method:"post",
+            let response = await fetch(`https://crud-8t5x.onrender.com/student`, {method:"post",
             body:JSON.stringify({name, email, contact_number, age, fatherName}),
             headers: { "Content-Type" : "application/json" },
           })

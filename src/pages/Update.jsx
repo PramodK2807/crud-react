@@ -15,7 +15,7 @@ const Update = () => {
     const params = useParams()
 
     const getStudentData = async() => {
-        let res = await fetch(`http://localhost:3100/student/${params.id}`)
+        let res = await fetch(`https://crud-8t5x.onrender.com/student/${params.id}`)
         let data = await res.json()
         setName(data.student.name)
         setEmail(data.student.email)
@@ -47,7 +47,7 @@ const Update = () => {
         }
       
           try {
-            let response = await fetch(`http://localhost:3100/student/${params.id}`, {method:"put",
+            let response = await fetch(`https://crud-8t5x.onrender.com/student/${params.id}`, {method:"put",
             body:JSON.stringify({name, email, contact_number, age, fatherName}),
             headers: { "Content-Type" : "application/json" },
           })
