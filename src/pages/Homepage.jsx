@@ -6,7 +6,7 @@ const Homepage = () => {
   const [student, setStudent ] = useState('')
 
   const getStudentData = async() => {
-    let res = await fetch(`http://localhost:3100/student`)
+    let res = await fetch(`https://crud-8t5x.onrender.com/student`)
     let student = await res.json()
     setStudent(student.student)
   }
