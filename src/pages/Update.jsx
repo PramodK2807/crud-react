@@ -36,10 +36,10 @@ const Update = () => {
           
           let emailVer = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
 
-          if(contact_number.length !== 10 ){
-            alert("Enter Correct Mobile Number");
-            return false;
-          }
+          // if(contact_number.length !== 10 ){
+          //   alert("Enter Correct Mobile Number");
+          //   return false;
+          // }
           if(!email.match(emailVer)){
             alert('Please enter valid email')
             return false
